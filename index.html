@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Metadados da página -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery</title>
+
+  <!-- Conexão com a fonte Roboto do Google Fonts e inclusão do arquivo de estilo main.css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <!-- Cabeçalho da página -->
+  <header>
+    <!-- Título principal -->
+    <h1>Galeria de Fotos</h1>
+    <!-- Botão para mostrar o formulário de inserção de nova imagem -->
+    <button type="button">Nova imagem +</button>
+  </header>
+
+  <!-- Formulário de inserção de nova imagem -->
+  <form>
+    <!-- Título do formulário -->
+    <h2>Inserir nova imagem</h2>
+    <!-- Campo de entrada para o endereço da nova imagem -->
+    <input type="url" id="input-Imagem" required placeholder="Endereço de imagem">
+    <!-- Botões para adicionar e cancelar a inserção de nova imagem -->
+    <button type="submit">Adicionar</button>
+    <button id="botaoCancelar" type="reset">Cancelar</button>
+  </form>
+
+  <!-- Lista não ordenada (ul) para exibir as imagens -->
+  <ul>
+    <!-- Item de lista com imagem e overlay de link para a imagem -->
+    <li>
+      <img src="./images/foto1.jpg" alt="Pintura Gato">
+      <div class="overlay-image-link">
+        <!-- Link para abrir a imagem em tamanho real em uma nova guia/janela -->
+        <a href="./images/foto1.jpg" title="Ver imagem tamanho Real" target="_blank">Ver imagem tamanho Real</a>
+      </div>
+    </li>
+    <!-- Outros itens de lista semelhantes para diferentes imagens -->
+    <li>
+      <img src="./images/foto2.jpg" alt="Pintura cisne">
+      <div class="overlay-image-link">
+        <a href="./images/foto2.jpg" title="Ver imagem tamanho Real" target="_blank">Ver imagem tamanho Real</a>
+      </div>
+    </li>
+    <li>
+      <img src="./images/foto3.jpg" alt="Pintura caes">
+      <div class="overlay-image-link">
+        <a href="./images/foto3.jpg" title="Ver imagem tamanho Real" target="_blank">Ver imagem tamanho Real</a>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Inclusão da biblioteca jQuery e do arquivo de script main.js -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
