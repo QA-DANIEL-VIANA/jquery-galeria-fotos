@@ -61,7 +61,7 @@ ul {
 }
 
 ul li {
-    max-width: 25%;
+    max-width: 20%;
     list-style: none;
     position: relative;
     max-height: 250px;
@@ -71,7 +71,8 @@ ul li {
 
 ul li img{
     width: 100%;
-    padding-left: 0px;
+    height: 100%;
+    
     
 }
 
