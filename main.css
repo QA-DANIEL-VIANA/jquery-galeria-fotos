@@ -64,13 +64,14 @@ ul li {
     max-width: 25%;
     list-style: none;
     position: relative;
-    max-height: 280px;
+    max-height: 250px;
     overflow: hidden;
+ 
 }
 
 ul li img{
     width: 100%;
-    
+    padding-left: 0px;
     
 }
 
@@ -83,6 +84,7 @@ ul li img{
     width: 100%;
     opacity: 0;
     transition: all ease .5s;
+    
 }
 .overlay-image-link a {
     color: white;
